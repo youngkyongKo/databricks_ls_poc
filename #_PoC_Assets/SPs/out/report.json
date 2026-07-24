@@ -1,0 +1,4462 @@
+{
+   "inventory" : [
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "LEFT" : 2,
+            "LEN" : 1,
+            "MAX" : 1,
+            "SUBSTRING" : 1,
+            "SUM" : 2
+         },
+         "lineCount" : 185,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_03_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_BI_PLAN_BPA_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_DEPT_ALLOC_RATE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_LOOKUP_VALUES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_PROD_LN"
+            },
+            {
+               "action" : "write",
+               "count" : 1,
+               "object" : "T_DW_EPO_IPO_CODE_CONV_RED_RSLT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_IPO_RCV_BASE_RED_DTL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_IPO_CODE_CONV_RED_RSLT]"
+            },
+            {
+               "action" : "write",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_IPO_CODE_CONV_RED_RSLT]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_03_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "LEFT" : 2,
+            "LEN" : 1,
+            "ROW_NUMBER" : 1,
+            "SUBSTRING" : 1
+         },
+         "lineCount" : 191,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL_04_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_BI_PLAN_BPA_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_DEPT_ALLOC_RATE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_LOOKUP_VALUES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_DEPARTMENT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_PROD_LN"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_IPO_RCV_BASE_RED_DTL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL_04_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "ABS" : 14,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "ROUND" : 17,
+            "SUM" : 36
+         },
+         "lineCount" : 162,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_COST_RED_RSLT_18_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "V_DW_WIP_RED_COST_ANALYSIS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_IPO_COST_RED_RSLT]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EPO_IPO_COST_RED_RSLT]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_COST_RED_RSLT_18_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "ABS" : 10,
+            "CONCAT" : 2,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "MAX" : 11,
+            "ROW_NUMBER" : 1,
+            "SUM" : 22,
+            "TRIM" : 15
+         },
+         "lineCount" : 518,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_BI_PO_DTL_SAVE_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PER_ALL_PEOPLE_F"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PO_HEADERS_ALL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_PROD_LN"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_IPO_IN_OUT_RED_RSLT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_IPO_OUT_IN_RED_RSLT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_MP_COST_RED_DETAIL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_WIP_RED_MPI_RED_RSLT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "V_DW_WIP_RED_BOM_CHANGE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_IPO_DEPT_COST_RED_DTL]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EPO_IPO_DEPT_COST_RED_DTL]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CONCAT" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "LEFT" : 1,
+            "SUBSTRING" : 2
+         },
+         "lineCount" : 119,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DESIGN_ALLOCATION_05_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_DEPT_ALLOC_RATE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORGANIZATION"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_IPO_DESIGN_ALLOCATION]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EPO_IPO_DESIGN_ALLOCATION]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DESIGN_ALLOCATION_05_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 11,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "ISNUMERIC" : 1,
+            "TRIM" : 1
+         },
+         "lineCount" : 124,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_IN_OUT_RED_RSLT_11_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_BOM_CHANGE_MONTHLY"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_IPO_IN_OUT_RED_RSLT]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EPO_IPO_IN_OUT_RED_RSLT]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_IN_OUT_RED_RSLT_11_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "ABS" : 10,
+            "CAST" : 2,
+            "CONCAT" : 4,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "ISNULL" : 12,
+            "MAX" : 10,
+            "ROW_NUMBER" : 1,
+            "SUM" : 26,
+            "TRIM" : 16
+         },
+         "lineCount" : 489,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_BI_PO_DTL_SAVE_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PER_ALL_PEOPLE_F"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PO_HEADERS_ALL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_PROD_LN"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_IPO_IN_OUT_RED_RSLT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_IPO_OUT_IN_RED_RSLT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_MP_COST_RED_DETAIL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_WIP_RED_MPI_RED_RSLT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "V_DW_WIP_RED_BOM_CHANGE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_IPO_ITEM_RED_RSLT]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EPO_IPO_ITEM_RED_RSLT]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "ISNULL" : 26,
+            "MAX" : 11,
+            "NVARCHAR" : 1,
+            "SUM" : 50
+         },
+         "lineCount" : 346,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MP_COST_RED_RSLT_09_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_ECST_BI_MFG_COST_DTL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_MP_COST_RED_DETAIL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_FACT_FIN_CCT_ITEM_SALES_COST"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "V_DW_WIP_RED_BOM_CHANGE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_IPO_MP_COST_RED_RSLT]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EPO_IPO_MP_COST_RED_RSLT]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MP_COST_RED_RSLT_09_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "ROUND" : 28,
+            "SUM" : 94
+         },
+         "lineCount" : 220,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_COST_ANAL_17_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_FACT_FIN_CCT_MFG_COST_STATUS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_IPO_MTL_COST_ANAL]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EPO_IPO_MTL_COST_ANAL]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_COST_ANAL_17_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "ISNULL" : 1,
+            "MAX" : 1,
+            "ROW_NUMBER" : 1,
+            "SUBSTRING" : 1
+         },
+         "lineCount" : 185,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_USAGE_STATUS_DTL_15_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_BI_PO_DTL_SAVE_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_LOOKUP_VALUES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PER_ALL_PEOPLE_F"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_IPO_MTL_USAGE_STATUS_DTL]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EPO_IPO_MTL_USAGE_STATUS_DTL]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_USAGE_STATUS_DTL_15_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "ROW_NUMBER" : 1
+         },
+         "lineCount" : 109,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_USAGE_STATUS_RSLT_16_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_MP_COST_RED_DETAIL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_IPO_MTL_USAGE_STATUS_RSLT]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EPO_IPO_MTL_USAGE_STATUS_RSLT]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_USAGE_STATUS_RSLT_16_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 11,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "SUBSTRING" : 1
+         },
+         "lineCount" : 138,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_OUT_IN_RED_RSLT_12_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_BOM_CHANGE_MONTHLY"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_DEPT_ALLOC_RATE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_LOOKUP_VALUES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_IPO_OUT_IN_RED_RSLT]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EPO_IPO_OUT_IN_RED_RSLT]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_OUT_IN_RED_RSLT_12_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "FORMAT" : 1,
+            "GETDATE" : 2,
+            "RIGHT" : 1,
+            "ROW_NUMBER" : 1,
+            "SUBSTRING" : 1,
+            "TRIM" : 1
+         },
+         "lineCount" : 192,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_RCV_BASE_RED_DTL_02_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_LOOKUP_VALUES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_IPO_RCV_BASE_RED_DTL]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EPO_IPO_RCV_BASE_RED_DTL]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_RCV_BASE_RED_DTL_02_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "ABS" : 2,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "ROUND" : 2,
+            "ROW_NUMBER" : 2,
+            "SUBSTRING" : 3,
+            "SUM" : 2
+         },
+         "lineCount" : 288,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_EPO_MP_COST_RED_DETAIL_06_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_LOOKUP_VALUES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_CODE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORGANIZATION"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_FIN_CCT_MFG_COST_DETAIL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_FACT_FIN_CCT_ITEM_SALES_COST"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EPO_MP_COST_RED_DETAIL]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EPO_MP_COST_RED_DETAIL]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_EPO_MP_COST_RED_DETAIL_06_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 2,
+            "CONCAT" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2
+         },
+         "lineCount" : 204,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_BOM_CHANGE_01_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "B.END_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "B.PARENT_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "BOM_CHANGE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_BI_BOM_CHANGE_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_WIP_RED_BOM_CHANGE]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_WIP_RED_BOM_CHANGE]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "CTE_TABLE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_BOM_CHANGE_01_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "ROUND" : 2
+         },
+         "lineCount" : 113,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_CURRENCY_RATE_DIFF_19_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_CURRENCY_RATE_DIFF"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_WIP_RED_CURRENCY_RATE_DIFF]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_WIP_RED_CURRENCY_RATE_DIFF]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_CURRENCY_RATE_DIFF_19_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CONCAT" : 2,
+            "COUNT" : 1,
+            "DATEADD" : 3,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 3,
+            "ISNULL" : 12,
+            "ROUND" : 2,
+            "SUBSTRING" : 1,
+            "SUM" : 4
+         },
+         "lineCount" : 236,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_EXPLOSIONS_HIST_20_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_BI_MTL_ITEM_COST_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_EXPLOSIONS_HIST"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM_TYPE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_IPO_MP_COST_RED_RSLT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_MP_COST_RED_DETAIL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "V_DW_WIP_RED_BOM_CHANGE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_WIP_RED_EXPLOSIONS_HIST]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_WIP_RED_EXPLOSIONS_HIST]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_EXPLOSIONS_HIST_20_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 33,
+            "COUNT" : 1,
+            "DATEADD" : 4,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "FORMAT" : 1,
+            "GETDATE" : 4,
+            "ISNULL" : 2,
+            "LEFT" : 1,
+            "MAX" : 1,
+            "SUBSTRING" : 1,
+            "SUM" : 1,
+            "TRIM" : 3
+         },
+         "lineCount" : 260,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_MPI_RED_RSLT_10_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_BI_PO_DTL_SAVE_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_BOM_CHANGE_MONTHLY"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_DEPT_ALLOC_RATE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_ITEM_REQ_QTY_MON"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_LOOKUP_VALUES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_ORG_ORGA_DEFI_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PER_ALL_PEOPLE_F"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PO_HEADERS_ALL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_WIP_RED_MPI_RED_RSLT]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_WIP_RED_MPI_RED_RSLT]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_MPI_RED_RSLT_10_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2
+         },
+         "lineCount" : 153,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_PJT_COST_SAVE_07_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_PJT_MTL_COST_SAVE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_WIP_RED_PJT_COST_SAVE]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_WIP_RED_PJT_COST_SAVE]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_PJT_COST_SAVE_07_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2
+         },
+         "lineCount" : 163,
+         "name" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_PLAN_PJT_TASK_MONTH_08_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[ERPSYS].[ERP_EBOM_PLAN_PJT_TSK_M]"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_WIP_RED_PLAN_PJT_TASK_MONTH]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_WIP_RED_PLAN_PJT_TASK_MONTH]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_PLAN_PJT_TASK_MONTH_08_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "ISNULL" : 5,
+            "NULLIF" : 1,
+            "ROUND" : 6,
+            "SUM" : 8
+         },
+         "lineCount" : 176,
+         "name" : "dbo.PK_PRD_COST_RED_T_FACT_FIN_MP_COST_RED_CIRC_21_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EBOM_BI_PO_DTL_SAVE_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EPO_IPO_MP_COST_RED_RSLT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_FIN_CCT_TEAM_PL_RESULT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_FACT_FIN_MP_COST_RED_CIRC]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_FACT_FIN_MP_COST_RED_CIRC]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.PK_PRD_COST_RED_T_FACT_FIN_MP_COST_RED_CIRC_21_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "COUNT" : 1,
+            "DATEADD" : 3,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 3,
+            "ISNULL" : 3,
+            "ROW_NUMBER" : 1
+         },
+         "lineCount" : 129,
+         "name" : "dbo.SP_T_DIM_FND_COM_COUNTRY_N_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_TERRITORIES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_TERRITORIES_TL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_RA_TERRITORIES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "INFORMATION_SCHEMA.COLUMNS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_COUNTRY]"
+            },
+            {
+               "action" : "truncate",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_COUNTRY]"
+            },
+            {
+               "action" : "write",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_COUNTRY]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DIM_FND_COM_COUNTRY_N_C.sql",
+         "statementCount" : 19
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CONCAT" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "FORMAT" : 2,
+            "GETDATE" : 2,
+            "ISNULL" : 1,
+            "ISNUMERIC" : 1,
+            "LEN" : 1,
+            "MAX" : 7,
+            "REPLACE" : 1,
+            "SUBSTRING" : 3,
+            "TRIM" : 1
+         },
+         "lineCount" : 119,
+         "name" : "dbo.SP_T_DIM_FND_COM_CUSTOMER_MASTER_N_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_CUSTOMER]"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_CUSTOMER_MASTER]"
+            },
+            {
+               "action" : "truncate",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_CUSTOMER_MASTER]"
+            },
+            {
+               "action" : "write",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_CUSTOMER_MASTER]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DIM_FND_COM_CUSTOMER_MASTER_N_C.sql",
+         "statementCount" : 19
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "COUNT" : 1,
+            "DATEADD" : 3,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "FORMAT" : 1,
+            "GETDATE" : 3,
+            "ISNULL" : 6,
+            "ROW_NUMBER" : 1,
+            "SUBSTRING" : 4,
+            "USING" : 1
+         },
+         "lineCount" : 284,
+         "name" : "dbo.SP_T_DIM_FND_COM_CUSTOMER_N_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EAR_CUSTOMER_SITES_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_HZ_CUST_ACCOUNTS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_HZ_CUST_ACCT_SITES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_HZ_CUST_PROFILES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_HZ_CUST_PROF_CLAS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_HZ_CUST_SITE_USES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_HZ_LOCATIONS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_HZ_PARTIES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_HZ_PARTY_SITES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_CUSTOMER]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT",
+            "MERGE",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "UPDATE",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DIM_FND_COM_CUSTOMER_N_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 5,
+            "CONCAT" : 4,
+            "COUNT" : 1,
+            "DATEADD" : 4,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "FORMAT" : 3,
+            "GETDATE" : 4,
+            "ISNULL" : 22,
+            "LEFT" : 3,
+            "LIKE" : 1,
+            "SUBSTRING" : 1,
+            "TRIM" : 4
+         },
+         "lineCount" : 466,
+         "name" : "dbo.SP_T_DIM_FND_COM_ITEM_N_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_ESVC_SYST_ITEM_CLAI"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_FLEX_VALUE_SETS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_FLEX_VALU_VL_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_MTL_CATEGORIES_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_MTL_ITEM_CATEGORIES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_MTL_SYSTEM_ITEMS_B"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_ORG_ORGA_DEFI_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[ERPSYS].[ERP_EORG_ORGA_DEFI_V]"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_ITEM]"
+            },
+            {
+               "action" : "truncate",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_ITEM]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DIM_FND_COM_ITEM]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DIM_FND_COM_ITEM_N_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "COUNT" : 1,
+            "DATEADD" : 3,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 3,
+            "ISNULL" : 1,
+            "RTRIM" : 11
+         },
+         "lineCount" : 101,
+         "name" : "dbo.SP_T_DIM_FND_COM_ITEM_TYPE_N_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_MTL_SYSTEM_ITEMS_B"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_ITEM_TYPE]"
+            },
+            {
+               "action" : "truncate",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_ITEM_TYPE]"
+            },
+            {
+               "action" : "write",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_ITEM_TYPE]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DIM_FND_COM_ITEM_TYPE_N_C.sql",
+         "statementCount" : 19
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CONCAT" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "REPLACE" : 1,
+            "SUBSTRING" : 3
+         },
+         "lineCount" : 108,
+         "name" : "dbo.SP_T_DIM_FND_COM_MONTH_N_I.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_MONTH]"
+            },
+            {
+               "action" : "truncate",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_MONTH]"
+            },
+            {
+               "action" : "write",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_MONTH]"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "dbo.DD_COM_MONTH"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DIM_FND_COM_MONTH_N_I.sql",
+         "statementCount" : 19
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "COUNT" : 1,
+            "DATEADD" : 4,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "FORMAT" : 2,
+            "GETDATE" : 4,
+            "ISNULL" : 10,
+            "ROW_NUMBER" : 1
+         },
+         "lineCount" : 260,
+         "name" : "dbo.SP_T_DIM_FND_COM_ORG_N_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERP.EXT_EINV_PROD_ORG_MSTT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_HR_ALL_ORGA_UNITS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_MTL_PARAMETERS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_ORG_ORGA_DEFI_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORGANIZATION"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_ORG]"
+            },
+            {
+               "action" : "truncate",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_ORG]"
+            },
+            {
+               "action" : "write",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_ORG]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DIM_FND_COM_ORG_N_C.sql",
+         "statementCount" : 19
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "COUNT" : 1,
+            "DATEADD" : 4,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 4,
+            "MAX" : 9
+         },
+         "lineCount" : 117,
+         "name" : "dbo.SP_T_DIM_FND_COM_PJT_CLSS_N_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "RMS.RMS_TR_CHARACVALUE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_PJT_CLSS]"
+            },
+            {
+               "action" : "truncate",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_PJT_CLSS]"
+            },
+            {
+               "action" : "write",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_PJT_CLSS]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DIM_FND_COM_PJT_CLSS_N_C.sql",
+         "statementCount" : 19
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CONCAT" : 2,
+            "COUNT" : 1,
+            "DATEADD" : 7,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "FORMAT" : 3,
+            "GETDATE" : 11,
+            "ISNULL" : 12,
+            "LIKE" : 2,
+            "MAX" : 2,
+            "SUBSTRING" : 3,
+            "USING" : 1
+         },
+         "lineCount" : 288,
+         "name" : "dbo.SP_T_DIM_FND_COM_PROD_LN_N_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 2,
+               "object" : "ERPSYS.ERP_FND_FLEX_VALUE_SETS"
+            },
+            {
+               "action" : "read",
+               "count" : 2,
+               "object" : "ERPSYS.ERP_FND_FLEX_VALU_VL_V"
+            },
+            {
+               "action" : "read",
+               "count" : 2,
+               "object" : "ERPSYS.ERP_FND_ID_FLEX_SEGM"
+            },
+            {
+               "action" : "read",
+               "count" : 2,
+               "object" : "ERPSYS.ERP_GL_LEDGERS"
+            },
+            {
+               "action" : "read",
+               "count" : 2,
+               "object" : "ERPSYS.ERP_ORG_ORGA_DEFI_V"
+            },
+            {
+               "action" : "read",
+               "count" : 2,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 2,
+               "object" : "T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_PROD_LN]"
+            },
+            {
+               "action" : "write",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT",
+            "INSERT_INTO",
+            "MERGE",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "UPDATE",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DIM_FND_COM_PROD_LN_N_C.sql",
+         "statementCount" : 22
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 3,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "FORMAT" : 2,
+            "GETDATE" : 3,
+            "ISNULL" : 7
+         },
+         "lineCount" : 157,
+         "name" : "dbo.SP_T_DIM_FND_COM_PROJECT_N_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_PROJECTS_ALL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_PROJECT_CLASSES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_SEGMENT_VALUE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_RND_PJT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_PROJECT]"
+            },
+            {
+               "action" : "truncate",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_PROJECT]"
+            },
+            {
+               "action" : "write",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_PROJECT]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DIM_FND_COM_PROJECT_N_C.sql",
+         "statementCount" : 19
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "COUNT" : 1,
+            "DATEADD" : 5,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 5,
+            "USING" : 1
+         },
+         "lineCount" : 123,
+         "name" : "dbo.SP_T_DIM_FND_COM_REP_TERR_N_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_FLEX_VALUE_SETS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_FLEX_VALU_VL_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_RA_TERRITORIES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_REP_TERR]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT",
+            "MERGE",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "UPDATE",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DIM_FND_COM_REP_TERR_N_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CONCAT" : 2,
+            "CONVERT" : 2,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "FORMAT" : 10,
+            "GETDATE" : 2,
+            "ISNULL" : 18,
+            "LEN" : 1,
+            "MAX" : 4,
+            "MIN" : 1,
+            "SUBSTRING" : 4,
+            "TRIM" : 1
+         },
+         "lineCount" : 292,
+         "name" : "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "RMS.RMS_LSISPARTPROJECTLINK"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "RMS.RMS_RMSD_RND_STEP"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "RMS.RMS_RMSD_STEP_ERPCD"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "RMS.RMS_TR_CHARACVALUE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "RMS.RMS_TR_RELEASESTATUS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "RMS.RMS_TR_RESOURCE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "RMS.RMS_TR_ROLE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "RMS.RMS_TR_STEP"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "RMS.RMS_TR_STEPACCESS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "RMS.RMS_TR_STEPCHARAC"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "RMS.RMS_TR_TASK"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORGANIZATION"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_PJT_CLSS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_RND_PJT]"
+            },
+            {
+               "action" : "truncate",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_RND_PJT]"
+            },
+            {
+               "action" : "write",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_RND_PJT]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql",
+         "statementCount" : 19
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CONCAT" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 4,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "FORMAT" : 2,
+            "GETDATE" : 4,
+            "ISNULL" : 2,
+            "TRIM" : 2,
+            "USING" : 1
+         },
+         "lineCount" : 163,
+         "name" : "dbo.SP_T_DIM_FND_COM_TASK_N_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_MTL_PARAMETERS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_PROJECTS_ALL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_PROJECT_CLASSES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_SEGMENT_VALUE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_SEGM_VALUE_SETS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_TASKS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_TASK]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT",
+            "MERGE",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "UPDATE",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DIM_FND_COM_TASK_N_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "COUNT" : 1,
+            "DATEADD" : 4,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 4,
+            "ISNULL" : 1,
+            "USING" : 1
+         },
+         "lineCount" : 136,
+         "name" : "dbo.SP_T_DIM_FND_COM_TERRITORY_N_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_FLEX_VALUE_SETS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_FLEX_VALU_VL_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_RA_TERRITORIES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_REP_TERR"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DIM_FND_COM_TERRITORY]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT",
+            "MERGE",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "UPDATE",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DIM_FND_COM_TERRITORY_N_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 7,
+            "CONCAT" : 2,
+            "COUNT" : 5,
+            "DATEADD" : 9,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "FORMAT" : 5,
+            "GETDATE" : 4,
+            "ISNULL" : 14,
+            "LEN" : 1,
+            "MAX" : 13,
+            "SUBSTRING" : 6,
+            "SUM" : 16,
+            "TRIM" : 4,
+            "USING" : 2
+         },
+         "lineCount" : 495,
+         "name" : "dbo.SP_T_DW_EOM_SCO_NEW_PRD_SA_STAT.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EDCM_TICA_BALANCE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORGANIZATION"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_PROD_LN"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_PROJECT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_RND_PJT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_FIN_CCT_SALES_COST_DETAIL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_RND_RDV_INPUT_COST"
+            },
+            {
+               "action" : "read",
+               "count" : 3,
+               "object" : "[dbo].[T_DW_EOM_SCO_NEW_PRD_SA_STAT]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EOM_SCO_NEW_PRD_SA_STAT]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "CTE_TABLE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "MERGE",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "UPDATE",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DW_EOM_SCO_NEW_PRD_SA_STAT.sql",
+         "statementCount" : 25
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 4,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "FORMAT" : 12,
+            "GETDATE" : 2,
+            "ISNULL" : 29,
+            "RANK" : 1,
+            "ROUND" : 17,
+            "SUBSTRING" : 2,
+            "SUM" : 23,
+            "TRIM" : 1
+         },
+         "lineCount" : 483,
+         "name" : "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_ECST_PJT_COGS_ALO_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EORG_ORGA_DEFI_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EPA_ORG_FOR_SALES_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EPA_PRO_REVENUE_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EPA_TASK_NEW_ITEMS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_GL_DAILY_RATES_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_BUDGET_LINES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_BUDGET_VERSIONS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_CUST_EVENT_RDL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_DRAFT_REVENUES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_PROJECTS_ALL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_PROJECT_CLASSES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_PROJECT_STATUSES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_PROJ_CUSTOMERS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_PROJ_PLAYERS_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_RESO_ASSIGNMENTS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_RESO_LIST_MEMBER"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_SEGMENT_VALUE"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_PA_TASKS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_EIS_DYNA_HAND_FLAG_INPUT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 3,
+            "CONCAT" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 4,
+            "EOMONTH" : 1,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "FORMAT" : 2,
+            "GETDATE" : 3,
+            "ISNULL" : 2,
+            "ROW_NUMBER" : 1
+         },
+         "lineCount" : 162,
+         "name" : "dbo.SP_T_DW_FIN_CCT_MFG_COST_DETAIL_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "EBIZ.RP_SYSM_MFG_COST"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_ECST_BI_MFG_COST_DTL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORGANIZATION"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_FIN_CCT_MFG_COST_DETAIL]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_FIN_CCT_MFG_COST_DETAIL]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DW_FIN_CCT_MFG_COST_DETAIL_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 8,
+            "CHARINDEX" : 1,
+            "CONCAT" : 5,
+            "COUNT" : 1,
+            "DATEADD" : 3,
+            "EOMONTH" : 1,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "FORMAT" : 10,
+            "GETDATE" : 2,
+            "ISNULL" : 19,
+            "LEN" : 1,
+            "MAX" : 2,
+            "ROUND" : 1,
+            "SUBSTRING" : 2,
+            "UPPER" : 1
+         },
+         "lineCount" : 394,
+         "name" : "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "EBIZ.COM_BPS_BUSINESS_PLAN"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_ECST_SALES_DETAILS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EOE_PJT_DEPT_MARKET"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_FND_LOOKUP_VALUES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_HZ_CUST_SITE_USES"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_OE_ORDER_HEADERS"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_OE_ORDER_LINES_ALL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_CUSTOMER_MASTER"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_MARKET"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_FIN_CCT_SALES_COST_DETAIL]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_FIN_CCT_SALES_COST_DETAIL]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "CTE_TABLE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CONCAT" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 3,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 3,
+            "ISNULL" : 42,
+            "REPLACE" : 4,
+            "SUM" : 38
+         },
+         "lineCount" : 215,
+         "name" : "dbo.SP_T_DW_FIN_CCT_TEAM_PL_RESULT_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_MONTH"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_FIN_CCT_TEAM_PL_RESULT]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_FIN_CCT_TEAM_PL_RESULT]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DW_FIN_CCT_TEAM_PL_RESULT_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "SUBSTRING" : 1,
+            "SUM" : 7
+         },
+         "lineCount" : 154,
+         "name" : "dbo.SP_T_DW_RND_RDV_INPUT_COST_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EDCM_MGT_MONTH_DETAIL"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "ERPSYS.ERP_EDCM_SUM_OF_ACCOUNTS_V"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_PROJECT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_DW_RND_RDV_INPUT_COST]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_DW_RND_RDV_INPUT_COST]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_DW_RND_RDV_INPUT_COST_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CAST" : 2,
+            "CONCAT" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "ROUND" : 18,
+            "SUBSTRING" : 3,
+            "SUM" : 18
+         },
+         "lineCount" : 168,
+         "name" : "dbo.SP_T_FACT_FIN_CCT_ITEM_SALES_COST_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_COUNTRY"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ITEM"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_FACT_FIN_CCT_ITEM_SALES_COST]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_FACT_FIN_CCT_ITEM_SALES_COST]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_FACT_FIN_CCT_ITEM_SALES_COST_M_C.sql",
+         "statementCount" : 20
+      },
+      {
+         "complexityLevel" : "MEDIUM",
+         "functionCall" : {
+            "CONCAT" : 1,
+            "COUNT" : 1,
+            "DATEADD" : 2,
+            "ERROR_MESSAGE" : 1,
+            "ERROR_NUMBER" : 1,
+            "GETDATE" : 2,
+            "ISNULL" : 5,
+            "SUBSTRING" : 4,
+            "SUM" : 11,
+            "TRIM" : 2
+         },
+         "lineCount" : 216,
+         "name" : "dbo.SP_T_FACT_FIN_CCT_MFG_COST_STATUS_M_C.sql",
+         "objectRel" : [
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_MA_FS_ACCT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_ORG"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DIM_FND_COM_PROD_LN"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_FIN_CCT_AP_PJT_INDIVID_COST"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_DW_FIN_CCT_GL_PJT_INDIVID_COST"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_FACT_FIN_CCM_MFG_COST_BIZ_PLN"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "T_FACT_FIN_CCT_MFG_COST_STMT"
+            },
+            {
+               "action" : "read",
+               "count" : 1,
+               "object" : "[dbo].[T_FACT_FIN_CCT_MFG_COST_STATUS]"
+            },
+            {
+               "action" : "write",
+               "count" : 2,
+               "object" : "[dbo].[T_FACT_FIN_CCT_MFG_COST_STATUS]"
+            }
+         ],
+         "procAndFunctionCount" : 1,
+         "scriptCategories" : [
+            "CREATE_PROCEDURE",
+            "CTE_TABLE",
+            "DELETE",
+            "DYNAMIC_SQL",
+            "IF_START",
+            "INSERT_INTO",
+            "SELECT_VAR_ASSIGNMENT",
+            "UNKNOWN",
+            "VAR_ASSIGNMENT",
+            "VAR_DECLARE"
+         ],
+         "scriptType" : "ETL",
+         "sourceFile" : "dbo.SP_T_FACT_FIN_CCT_MFG_COST_STATUS_M_C.sql",
+         "statementCount" : 21
+      }
+   ],
+   "object_lineage" : [
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_BOM_CHANGE_01_M_C.sql"
+         ],
+         "target" : "B.END_ITEM"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_BOM_CHANGE_01_M_C.sql"
+         ],
+         "target" : "B.PARENT_ITEM"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_BOM_CHANGE_01_M_C.sql"
+         ],
+         "target" : "BOM_CHANGE"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql"
+         ],
+         "target" : "EBIZ.COM_BPS_BUSINESS_PLAN"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_FIN_CCT_MFG_COST_DETAIL_M_C.sql"
+         ],
+         "target" : "EBIZ.RP_SYSM_MFG_COST"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_ORG_N_C.sql"
+         ],
+         "target" : "ERP.EXT_EINV_PROD_ORG_MSTT"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_BOM_CHANGE_01_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EBOM_BI_BOM_CHANGE_V"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_EXPLOSIONS_HIST_20_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EBOM_BI_MTL_ITEM_COST_V"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_03_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL_04_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EBOM_BI_PLAN_BPA_V"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_USAGE_STATUS_DTL_15_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_MPI_RED_RSLT_10_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_FACT_FIN_MP_COST_RED_CIRC_21_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EBOM_BI_PO_DTL_SAVE_V"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_IN_OUT_RED_RSLT_11_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_OUT_IN_RED_RSLT_12_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_MPI_RED_RSLT_10_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EBOM_BOM_CHANGE_MONTHLY"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_CURRENCY_RATE_DIFF_19_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EBOM_CURRENCY_RATE_DIFF"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_03_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL_04_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DESIGN_ALLOCATION_05_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_OUT_IN_RED_RSLT_12_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_MPI_RED_RSLT_10_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EBOM_DEPT_ALLOC_RATE"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_EXPLOSIONS_HIST_20_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EBOM_EXPLOSIONS_HIST"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_MPI_RED_RSLT_10_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EBOM_ITEM_REQ_QTY_MON"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_PJT_COST_SAVE_07_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EBOM_PJT_MTL_COST_SAVE"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MP_COST_RED_RSLT_09_M_C.sql",
+            "dbo.SP_T_DW_FIN_CCT_MFG_COST_DETAIL_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_ECST_BI_MFG_COST_DTL"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_ECST_PJT_COGS_ALO_V"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_ECST_SALES_DETAILS"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_RND_RDV_INPUT_COST_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EDCM_MGT_MONTH_DETAIL"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_RND_RDV_INPUT_COST_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EDCM_SUM_OF_ACCOUNTS_V"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EOE_PJT_DEPT_MARKET"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EORG_ORGA_DEFI_V"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EPA_ORG_FOR_SALES_V"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EPA_PRO_REVENUE_V"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_EPA_TASK_NEW_ITEMS"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_ITEM_N_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_ESVC_SYST_ITEM_CLAI"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_ITEM_N_C.sql",
+            "dbo.SP_T_DIM_FND_COM_PROD_LN_N_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_FND_FLEX_VALUE_SETS"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_ITEM_N_C.sql",
+            "dbo.SP_T_DIM_FND_COM_PROD_LN_N_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_FND_FLEX_VALU_VL_V"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_PROD_LN_N_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_FND_ID_FLEX_SEGM"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_03_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL_04_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_USAGE_STATUS_DTL_15_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_OUT_IN_RED_RSLT_12_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_RCV_BASE_RED_DTL_02_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_MP_COST_RED_DETAIL_06_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_MPI_RED_RSLT_10_M_C.sql",
+            "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_FND_LOOKUP_VALUES"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FIND_COM_COUNTRY_N_C.sql",
+            "dbo.SP_T_DIM_FND_COM_COUNTRY_N_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_FND_TERRITORIES"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FIND_COM_COUNTRY_N_C.sql",
+            "dbo.SP_T_DIM_FND_COM_COUNTRY_N_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_FND_TERRITORIES_TL"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_GL_DAILY_RATES_V"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_PROD_LN_N_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_GL_LEDGERS"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_ORG_N_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_HR_ALL_ORGA_UNITS"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_HZ_CUST_SITE_USES"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_ITEM_N_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_MTL_CATEGORIES_V"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_ITEM_N_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_MTL_ITEM_CATEGORIES"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_ORG_N_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_MTL_PARAMETERS"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_ITEM_N_C.sql",
+            "dbo.SP_T_DIM_FND_COM_ITEM_TYPE_N_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_MTL_SYSTEM_ITEMS_B"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_OE_ORDER_HEADERS"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_OE_ORDER_LINES_ALL"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_MPI_RED_RSLT_10_M_C.sql",
+            "dbo.SP_T_DIM_FND_COM_ITEM_N_C.sql",
+            "dbo.SP_T_DIM_FND_COM_ORG_N_C.sql",
+            "dbo.SP_T_DIM_FND_COM_PROD_LN_N_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_ORG_ORGA_DEFI_V"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PA_BUDGET_LINES"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PA_BUDGET_VERSIONS"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PA_CUST_EVENT_RDL"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PA_DRAFT_REVENUES"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_PROJECT_N_C.sql",
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PA_PROJECTS_ALL"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_PROJECT_N_C.sql",
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PA_PROJECT_CLASSES"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PA_PROJECT_STATUSES"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PA_PROJ_CUSTOMERS"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PA_PROJ_PLAYERS_V"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PA_RESO_ASSIGNMENTS"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PA_RESO_LIST_MEMBER"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_PROJECT_N_C.sql",
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PA_SEGMENT_VALUE"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PA_TASKS"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_USAGE_STATUS_DTL_15_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_MPI_RED_RSLT_10_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PER_ALL_PEOPLE_F"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_MPI_RED_RSLT_10_M_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_PO_HEADERS_ALL"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FIND_COM_COUNTRY_N_C.sql",
+            "dbo.SP_T_DIM_FND_COM_COUNTRY_N_C.sql"
+         ],
+         "target" : "ERPSYS.ERP_RA_TERRITORIES"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FIND_COM_COUNTRY_N_C.sql",
+            "dbo.SP_T_DIM_FND_COM_COUNTRY_N_C.sql"
+         ],
+         "target" : "INFORMATION_SCHEMA.COLUMNS"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql"
+         ],
+         "target" : "RMS.RMS_LSISPARTPROJECTLINK"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql"
+         ],
+         "target" : "RMS.RMS_RMSD_RND_STEP"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql"
+         ],
+         "target" : "RMS.RMS_RMSD_STEP_ERPCD"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_PJT_CLSS_N_C.sql",
+            "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql"
+         ],
+         "target" : "RMS.RMS_TR_CHARACVALUE"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql"
+         ],
+         "target" : "RMS.RMS_TR_RELEASESTATUS"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql"
+         ],
+         "target" : "RMS.RMS_TR_RESOURCE"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql"
+         ],
+         "target" : "RMS.RMS_TR_ROLE"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql"
+         ],
+         "target" : "RMS.RMS_TR_STEP"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql"
+         ],
+         "target" : "RMS.RMS_TR_STEPACCESS"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql"
+         ],
+         "target" : "RMS.RMS_TR_STEPCHARAC"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql"
+         ],
+         "target" : "RMS.RMS_TR_TASK"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_MP_COST_RED_DETAIL_06_M_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_CODE"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_FACT_FIN_CCT_ITEM_SALES_COST_M_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_COUNTRY"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_CUSTOMER_MASTER"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL_04_M_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_DEPARTMENT"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_03_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL_04_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DESIGN_ALLOCATION_05_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MP_COST_RED_RSLT_09_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_USAGE_STATUS_RSLT_16_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_RCV_BASE_RED_DTL_02_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_MP_COST_RED_DETAIL_06_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_BOM_CHANGE_01_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_CURRENCY_RATE_DIFF_19_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_EXPLOSIONS_HIST_20_M_C.sql",
+            "dbo.SP_T_DW_EOM_SCO_NEW_PRD_SA_STAT.sql",
+            "dbo.SP_T_DW_FIN_CCT_MFG_COST_DETAIL_M_C.sql",
+            "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql",
+            "dbo.SP_T_DW_FIN_CCT_TEAM_PL_RESULT_M_C.sql",
+            "dbo.SP_T_FACT_FIN_CCT_ITEM_SALES_COST_M_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_ITEM"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_EXPLOSIONS_HIST_20_M_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_ITEM_TYPE"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_FACT_FIN_CCT_MFG_COST_STATUS_M_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_MA_FS_ACCT"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_FIN_CCT_TEAM_PL_RESULT_M_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_MONTH"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_03_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL_04_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_COST_RED_RSLT_18_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DESIGN_ALLOCATION_05_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MP_COST_RED_RSLT_09_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_RCV_BASE_RED_DTL_02_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_BOM_CHANGE_01_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_CURRENCY_RATE_DIFF_19_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_PJT_COST_SAVE_07_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_FACT_FIN_MP_COST_RED_CIRC_21_M_C.sql",
+            "dbo.SP_T_DIM_FND_COM_PROD_LN_N_C.sql",
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql",
+            "dbo.SP_T_DW_FIN_CCT_MFG_COST_DETAIL_M_C.sql",
+            "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql",
+            "dbo.SP_T_DW_FIN_CCT_TEAM_PL_RESULT_M_C.sql",
+            "dbo.SP_T_FACT_FIN_CCT_ITEM_SALES_COST_M_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_ORG"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DESIGN_ALLOCATION_05_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_MP_COST_RED_DETAIL_06_M_C.sql",
+            "dbo.SP_T_DIM_FND_COM_ORG_N_C.sql",
+            "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql",
+            "dbo.SP_T_DW_EOM_SCO_NEW_PRD_SA_STAT.sql",
+            "dbo.SP_T_DW_FIN_CCT_MFG_COST_DETAIL_M_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_ORGANIZATION"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_PJT_CLSS"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_03_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL_04_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql",
+            "dbo.SP_T_DW_EOM_SCO_NEW_PRD_SA_STAT.sql",
+            "dbo.SP_T_FACT_FIN_CCT_MFG_COST_STATUS_M_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_PROD_LN"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql",
+            "dbo.SP_T_DIM_FND_COM_ITEM_N_C.sql",
+            "dbo.SP_T_DIM_FND_COM_PROD_LN_N_C.sql",
+            "dbo.SP_T_DIM_FND_COM_PROJECT_N_C.sql",
+            "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_RND_RDV_INPUT_COST_M_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_PROJECT"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_PROJECT_N_C.sql"
+         ],
+         "target" : "T_DIM_FND_COM_RND_PJT"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SCO_NEW_PRD_SA_STAT.sql"
+         ],
+         "target" : "T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql"
+         ],
+         "target" : "T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql"
+         ],
+         "target" : "T_DW_EPO_IPO_IN_OUT_RED_RSLT"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_EXPLOSIONS_HIST_20_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_FACT_FIN_MP_COST_RED_CIRC_21_M_C.sql"
+         ],
+         "target" : "T_DW_EPO_IPO_MP_COST_RED_RSLT"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql"
+         ],
+         "target" : "T_DW_EPO_IPO_OUT_IN_RED_RSLT"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_03_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL_04_M_C.sql"
+         ],
+         "target" : "T_DW_EPO_IPO_RCV_BASE_RED_DTL"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MP_COST_RED_RSLT_09_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_USAGE_STATUS_RSLT_16_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_EXPLOSIONS_HIST_20_M_C.sql"
+         ],
+         "target" : "T_DW_EPO_MP_COST_RED_DETAIL"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_MP_COST_RED_DETAIL_06_M_C.sql"
+         ],
+         "target" : "T_DW_FIN_CCT_MFG_COST_DETAIL"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SCO_NEW_PRD_SA_STAT.sql"
+         ],
+         "target" : "T_DW_FIN_CCT_SALES_COST_DETAIL"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_FACT_FIN_MP_COST_RED_CIRC_21_M_C.sql"
+         ],
+         "target" : "T_DW_FIN_CCT_TEAM_PL_RESULT"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql"
+         ],
+         "target" : "T_DW_WIP_RED_MPI_RED_RSLT"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql"
+         ],
+         "target" : "T_EIS_DYNA_HAND_FLAG_INPUT"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_FACT_FIN_CCT_MFG_COST_STATUS_M_C.sql"
+         ],
+         "target" : "T_FACT_FIN_CCM_MFG_COST_BIZ_PLN"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MP_COST_RED_RSLT_09_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_MP_COST_RED_DETAIL_06_M_C.sql"
+         ],
+         "target" : "T_FACT_FIN_CCT_ITEM_SALES_COST"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_COST_ANAL_17_M_C.sql"
+         ],
+         "target" : "T_FACT_FIN_CCT_MFG_COST_STATUS"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_FACT_FIN_CCT_MFG_COST_STATUS_M_C.sql"
+         ],
+         "target" : "T_FACT_FIN_CCT_MFG_COST_STMT"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql"
+         ],
+         "target" : "T_MARKET"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MP_COST_RED_RSLT_09_M_C.sql",
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_EXPLOSIONS_HIST_20_M_C.sql"
+         ],
+         "target" : "V_DW_WIP_RED_BOM_CHANGE"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_COST_RED_RSLT_18_M_C.sql"
+         ],
+         "target" : "V_DW_WIP_RED_COST_ANALYSIS"
+      },
+      {
+         "reads" : [
+            "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_PLAN_PJT_TASK_MONTH_08_M_C.sql"
+         ],
+         "target" : "[ERPSYS].[ERP_EBOM_PLAN_PJT_TSK_M]"
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_ITEM_N_C.sql"
+         ],
+         "target" : "[ERPSYS].[ERP_EORG_ORGA_DEFI_V]"
+      },
+      {
+         "target" : "[dbo].[T_DIM_FND_COM_COUNTRY]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DIM_FND_COM_COUNTRY_N_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_FND_TERRITORIES",
+                  "ERPSYS.ERP_FND_TERRITORIES_TL",
+                  "ERPSYS.ERP_RA_TERRITORIES",
+                  "INFORMATION_SCHEMA.COLUMNS"
+               ]
+            },
+            {
+               "file" : "dbo.SP_T_DIM_FIND_COM_COUNTRY_N_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_FND_TERRITORIES",
+                  "ERPSYS.ERP_FND_TERRITORIES_TL",
+                  "ERPSYS.ERP_RA_TERRITORIES",
+                  "INFORMATION_SCHEMA.COLUMNS"
+               ]
+            }
+         ]
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_CUSTOMER_MASTER_N_C.sql"
+         ],
+         "target" : "[dbo].[T_DIM_FND_COM_CUSTOMER]"
+      },
+      {
+         "target" : "[dbo].[T_DIM_FND_COM_CUSTOMER_MASTER]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DIM_FND_COM_CUSTOMER_MASTER_N_C.sql",
+               "sources" : [
+                  "[dbo].[T_DIM_FND_COM_CUSTOMER]"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DIM_FND_COM_ITEM]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DIM_FND_COM_ITEM_N_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_ESVC_SYST_ITEM_CLAI",
+                  "ERPSYS.ERP_FND_FLEX_VALUE_SETS",
+                  "ERPSYS.ERP_FND_FLEX_VALU_VL_V",
+                  "ERPSYS.ERP_MTL_CATEGORIES_V",
+                  "ERPSYS.ERP_MTL_ITEM_CATEGORIES",
+                  "ERPSYS.ERP_MTL_SYSTEM_ITEMS_B",
+                  "ERPSYS.ERP_ORG_ORGA_DEFI_V",
+                  "T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP",
+                  "[ERPSYS].[ERP_EORG_ORGA_DEFI_V]"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DIM_FND_COM_ITEM_TYPE]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DIM_FND_COM_ITEM_TYPE_N_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_MTL_SYSTEM_ITEMS_B"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DIM_FND_COM_MONTH]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DIM_FND_COM_MONTH_N_I.sql",
+               "sources" : [
+                  "dbo.DD_COM_MONTH"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DIM_FND_COM_ORG]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DIM_FND_COM_ORG_N_C.sql",
+               "sources" : [
+                  "ERP.EXT_EINV_PROD_ORG_MSTT",
+                  "ERPSYS.ERP_HR_ALL_ORGA_UNITS",
+                  "ERPSYS.ERP_MTL_PARAMETERS",
+                  "ERPSYS.ERP_ORG_ORGA_DEFI_V",
+                  "T_DIM_FND_COM_ORGANIZATION"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DIM_FND_COM_PJT_CLSS]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DIM_FND_COM_PJT_CLSS_N_C.sql",
+               "sources" : [
+                  "RMS.RMS_TR_CHARACVALUE"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DIM_FND_COM_PROD_LN_N_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_FND_FLEX_VALUE_SETS",
+                  "ERPSYS.ERP_FND_FLEX_VALU_VL_V",
+                  "ERPSYS.ERP_FND_ID_FLEX_SEGM",
+                  "ERPSYS.ERP_GL_LEDGERS",
+                  "ERPSYS.ERP_ORG_ORGA_DEFI_V",
+                  "T_DIM_FND_COM_ORG",
+                  "T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DIM_FND_COM_PROJECT]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DIM_FND_COM_PROJECT_N_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_PA_PROJECTS_ALL",
+                  "ERPSYS.ERP_PA_PROJECT_CLASSES",
+                  "ERPSYS.ERP_PA_SEGMENT_VALUE",
+                  "T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP",
+                  "T_DIM_FND_COM_RND_PJT"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DIM_FND_COM_RND_PJT]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DIM_FND_COM_RND_PJT_N_C.sql",
+               "sources" : [
+                  "RMS.RMS_LSISPARTPROJECTLINK",
+                  "RMS.RMS_RMSD_RND_STEP",
+                  "RMS.RMS_RMSD_STEP_ERPCD",
+                  "RMS.RMS_TR_CHARACVALUE",
+                  "RMS.RMS_TR_RELEASESTATUS",
+                  "RMS.RMS_TR_RESOURCE",
+                  "RMS.RMS_TR_ROLE",
+                  "RMS.RMS_TR_STEP",
+                  "RMS.RMS_TR_STEPACCESS",
+                  "RMS.RMS_TR_STEPCHARAC",
+                  "RMS.RMS_TR_TASK",
+                  "T_DIM_FND_COM_ORGANIZATION",
+                  "T_DIM_FND_COM_PJT_CLSS",
+                  "T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EOM_SCO_NEW_PRD_SA_STAT]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DW_EOM_SCO_NEW_PRD_SA_STAT.sql",
+               "sources" : [
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ORGANIZATION",
+                  "T_DIM_FND_COM_PROD_LN",
+                  "T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT",
+                  "T_DW_FIN_CCT_SALES_COST_DETAIL"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DW_EOM_SPJ_TENDER_BIZ_SA_STAT_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_ECST_PJT_COGS_ALO_V",
+                  "ERPSYS.ERP_EORG_ORGA_DEFI_V",
+                  "ERPSYS.ERP_EPA_ORG_FOR_SALES_V",
+                  "ERPSYS.ERP_EPA_PRO_REVENUE_V",
+                  "ERPSYS.ERP_EPA_TASK_NEW_ITEMS",
+                  "ERPSYS.ERP_GL_DAILY_RATES_V",
+                  "ERPSYS.ERP_PA_BUDGET_LINES",
+                  "ERPSYS.ERP_PA_BUDGET_VERSIONS",
+                  "ERPSYS.ERP_PA_CUST_EVENT_RDL",
+                  "ERPSYS.ERP_PA_DRAFT_REVENUES",
+                  "ERPSYS.ERP_PA_PROJECTS_ALL",
+                  "ERPSYS.ERP_PA_PROJECT_CLASSES",
+                  "ERPSYS.ERP_PA_PROJECT_STATUSES",
+                  "ERPSYS.ERP_PA_PROJ_CUSTOMERS",
+                  "ERPSYS.ERP_PA_PROJ_PLAYERS_V",
+                  "ERPSYS.ERP_PA_RESO_ASSIGNMENTS",
+                  "ERPSYS.ERP_PA_RESO_LIST_MEMBER",
+                  "ERPSYS.ERP_PA_SEGMENT_VALUE",
+                  "ERPSYS.ERP_PA_TASKS",
+                  "T_DIM_FND_COM_ORG",
+                  "T_EIS_DYNA_HAND_FLAG_INPUT"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EPO_IPO_CODE_CONV_RED_RSLT]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_03_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EBOM_BI_PLAN_BPA_V",
+                  "ERPSYS.ERP_EBOM_DEPT_ALLOC_RATE",
+                  "ERPSYS.ERP_FND_LOOKUP_VALUES",
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ORG",
+                  "T_DIM_FND_COM_PROD_LN",
+                  "T_DW_EPO_IPO_RCV_BASE_RED_DTL"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL_04_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EBOM_BI_PLAN_BPA_V",
+                  "ERPSYS.ERP_EBOM_DEPT_ALLOC_RATE",
+                  "ERPSYS.ERP_FND_LOOKUP_VALUES",
+                  "T_DIM_FND_COM_DEPARTMENT",
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ORG",
+                  "T_DIM_FND_COM_PROD_LN",
+                  "T_DW_EPO_IPO_RCV_BASE_RED_DTL"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EPO_IPO_COST_RED_RSLT]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_COST_RED_RSLT_18_M_C.sql",
+               "sources" : [
+                  "T_DIM_FND_COM_ORG",
+                  "V_DW_WIP_RED_COST_ANALYSIS"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EPO_IPO_DEPT_COST_RED_DTL]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DEPT_COST_RED_DTL_13_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EBOM_BI_PO_DTL_SAVE_V",
+                  "ERPSYS.ERP_PER_ALL_PEOPLE_F",
+                  "ERPSYS.ERP_PO_HEADERS_ALL",
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ORG",
+                  "T_DIM_FND_COM_PROD_LN",
+                  "T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP",
+                  "T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL",
+                  "T_DW_EPO_IPO_IN_OUT_RED_RSLT",
+                  "T_DW_EPO_IPO_OUT_IN_RED_RSLT",
+                  "T_DW_EPO_MP_COST_RED_DETAIL",
+                  "T_DW_WIP_RED_MPI_RED_RSLT",
+                  "V_DW_WIP_RED_BOM_CHANGE"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EPO_IPO_DESIGN_ALLOCATION]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_DESIGN_ALLOCATION_05_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EBOM_DEPT_ALLOC_RATE",
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ORG",
+                  "T_DIM_FND_COM_ORGANIZATION"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EPO_IPO_IN_OUT_RED_RSLT]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_IN_OUT_RED_RSLT_11_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EBOM_BOM_CHANGE_MONTHLY"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EPO_IPO_ITEM_RED_RSLT]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_ITEM_RED_RSLT_14_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EBOM_BI_PO_DTL_SAVE_V",
+                  "ERPSYS.ERP_PER_ALL_PEOPLE_F",
+                  "ERPSYS.ERP_PO_HEADERS_ALL",
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ORG",
+                  "T_DIM_FND_COM_PROD_LN",
+                  "T_DIM_FND_COM_PROD_LN_SPG_BIZ_MAP",
+                  "T_DW_EPO_IPO_CODE_CONV_RED_RSLT_DTL",
+                  "T_DW_EPO_IPO_IN_OUT_RED_RSLT",
+                  "T_DW_EPO_IPO_OUT_IN_RED_RSLT",
+                  "T_DW_EPO_MP_COST_RED_DETAIL",
+                  "T_DW_WIP_RED_MPI_RED_RSLT",
+                  "V_DW_WIP_RED_BOM_CHANGE"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EPO_IPO_MP_COST_RED_RSLT]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MP_COST_RED_RSLT_09_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_ECST_BI_MFG_COST_DTL",
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ORG",
+                  "T_DW_EPO_MP_COST_RED_DETAIL",
+                  "T_FACT_FIN_CCT_ITEM_SALES_COST",
+                  "V_DW_WIP_RED_BOM_CHANGE"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EPO_IPO_MTL_COST_ANAL]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_COST_ANAL_17_M_C.sql",
+               "sources" : [
+                  "T_FACT_FIN_CCT_MFG_COST_STATUS"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EPO_IPO_MTL_USAGE_STATUS_DTL]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_USAGE_STATUS_DTL_15_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EBOM_BI_PO_DTL_SAVE_V",
+                  "ERPSYS.ERP_FND_LOOKUP_VALUES",
+                  "ERPSYS.ERP_PER_ALL_PEOPLE_F"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EPO_IPO_MTL_USAGE_STATUS_RSLT]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_MTL_USAGE_STATUS_RSLT_16_M_C.sql",
+               "sources" : [
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DW_EPO_MP_COST_RED_DETAIL"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EPO_IPO_OUT_IN_RED_RSLT]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_OUT_IN_RED_RSLT_12_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EBOM_BOM_CHANGE_MONTHLY",
+                  "ERPSYS.ERP_EBOM_DEPT_ALLOC_RATE",
+                  "ERPSYS.ERP_FND_LOOKUP_VALUES"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EPO_IPO_RCV_BASE_RED_DTL]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_EPO_IPO_RCV_BASE_RED_DTL_02_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_FND_LOOKUP_VALUES",
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ORG"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_EPO_MP_COST_RED_DETAIL]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_EPO_MP_COST_RED_DETAIL_06_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_FND_LOOKUP_VALUES",
+                  "T_DIM_FND_COM_CODE",
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ORGANIZATION",
+                  "T_DW_FIN_CCT_MFG_COST_DETAIL",
+                  "T_FACT_FIN_CCT_ITEM_SALES_COST"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_FIN_CCT_MFG_COST_DETAIL]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DW_FIN_CCT_MFG_COST_DETAIL_M_C.sql",
+               "sources" : [
+                  "EBIZ.RP_SYSM_MFG_COST",
+                  "ERPSYS.ERP_ECST_BI_MFG_COST_DTL",
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ORG",
+                  "T_DIM_FND_COM_ORGANIZATION"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_FIN_CCT_SALES_COST_DETAIL]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EOE_PJT_DEPT_MARKET",
+                  "ERPSYS.ERP_FND_LOOKUP_VALUES",
+                  "T_DIM_FND_COM_CUSTOMER_MASTER"
+               ]
+            },
+            {
+               "file" : "dbo.SP_T_DW_FIN_CCT_SALES_COST_DETAIL_M_C.sql",
+               "sources" : [
+                  "EBIZ.COM_BPS_BUSINESS_PLAN",
+                  "ERPSYS.ERP_ECST_SALES_DETAILS",
+                  "ERPSYS.ERP_HZ_CUST_SITE_USES",
+                  "ERPSYS.ERP_OE_ORDER_HEADERS",
+                  "ERPSYS.ERP_OE_ORDER_LINES_ALL",
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ORG",
+                  "T_MARKET"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_FIN_CCT_TEAM_PL_RESULT]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DW_FIN_CCT_TEAM_PL_RESULT_M_C.sql",
+               "sources" : [
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_MONTH",
+                  "T_DIM_FND_COM_ORG"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_RND_RDV_INPUT_COST]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_DW_RND_RDV_INPUT_COST_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EDCM_MGT_MONTH_DETAIL",
+                  "ERPSYS.ERP_EDCM_SUM_OF_ACCOUNTS_V",
+                  "T_DIM_FND_COM_PROJECT"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_WIP_RED_BOM_CHANGE]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_BOM_CHANGE_01_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EBOM_BI_BOM_CHANGE_V",
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ORG"
+               ]
+            },
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_BOM_CHANGE_01_M_C.sql",
+               "sources" : [
+                  "B.END_ITEM",
+                  "B.PARENT_ITEM",
+                  "BOM_CHANGE"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_WIP_RED_CURRENCY_RATE_DIFF]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_CURRENCY_RATE_DIFF_19_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EBOM_CURRENCY_RATE_DIFF",
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ORG"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_WIP_RED_EXPLOSIONS_HIST]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_EXPLOSIONS_HIST_20_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EBOM_BI_MTL_ITEM_COST_V",
+                  "ERPSYS.ERP_EBOM_EXPLOSIONS_HIST",
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ITEM_TYPE",
+                  "T_DW_EPO_IPO_MP_COST_RED_RSLT",
+                  "T_DW_EPO_MP_COST_RED_DETAIL",
+                  "V_DW_WIP_RED_BOM_CHANGE"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_WIP_RED_MPI_RED_RSLT]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_MPI_RED_RSLT_10_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EBOM_BI_PO_DTL_SAVE_V",
+                  "ERPSYS.ERP_EBOM_BOM_CHANGE_MONTHLY",
+                  "ERPSYS.ERP_EBOM_DEPT_ALLOC_RATE",
+                  "ERPSYS.ERP_EBOM_ITEM_REQ_QTY_MON",
+                  "ERPSYS.ERP_FND_LOOKUP_VALUES",
+                  "ERPSYS.ERP_ORG_ORGA_DEFI_V",
+                  "ERPSYS.ERP_PER_ALL_PEOPLE_F",
+                  "ERPSYS.ERP_PO_HEADERS_ALL"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_WIP_RED_PJT_COST_SAVE]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_PJT_COST_SAVE_07_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EBOM_PJT_MTL_COST_SAVE",
+                  "T_DIM_FND_COM_ORG"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_DW_WIP_RED_PLAN_PJT_TASK_MONTH]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_DW_WIP_RED_PLAN_PJT_TASK_MONTH_08_M_C.sql",
+               "sources" : [
+                  "[ERPSYS].[ERP_EBOM_PLAN_PJT_TSK_M]"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_FACT_FIN_CCT_ITEM_SALES_COST]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_FACT_FIN_CCT_ITEM_SALES_COST_M_C.sql",
+               "sources" : [
+                  "T_DIM_FND_COM_COUNTRY",
+                  "T_DIM_FND_COM_ITEM",
+                  "T_DIM_FND_COM_ORG"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_FACT_FIN_CCT_MFG_COST_STATUS]",
+         "writes" : [
+            {
+               "file" : "dbo.SP_T_FACT_FIN_CCT_MFG_COST_STATUS_M_C.sql",
+               "sources" : [
+                  "T_DIM_FND_COM_MA_FS_ACCT",
+                  "T_DIM_FND_COM_PROD_LN",
+                  "T_FACT_FIN_CCM_MFG_COST_BIZ_PLN",
+                  "T_FACT_FIN_CCT_MFG_COST_STMT"
+               ]
+            }
+         ]
+      },
+      {
+         "target" : "[dbo].[T_FACT_FIN_MP_COST_RED_CIRC]",
+         "writes" : [
+            {
+               "file" : "dbo.PK_PRD_COST_RED_T_FACT_FIN_MP_COST_RED_CIRC_21_M_C.sql",
+               "sources" : [
+                  "ERPSYS.ERP_EBOM_BI_PO_DTL_SAVE_V",
+                  "T_DIM_FND_COM_ORG",
+                  "T_DW_EPO_IPO_MP_COST_RED_RSLT",
+                  "T_DW_FIN_CCT_TEAM_PL_RESULT"
+               ]
+            }
+         ]
+      },
+      {
+         "reads" : [
+            "dbo.SP_T_DIM_FND_COM_MONTH_N_I.sql"
+         ],
+         "target" : "dbo.DD_COM_MONTH"
+      }
+   ],
+   "runInfo" : {
+      "inputFolder" : "/Users/yk.ko/git/PoC/databricks_ls_poc/#_PoC_Assets/SPs/all",
+      "reportName" : "/Users/yk.ko/git/PoC/databricks_ls_poc/#_PoC_Assets/SPs/out/report.xlsx",
+      "runDurationSeconds" : 5,
+      "sourceTechnology" : "SQL",
+      "startTime" : "2026-07-24T07:16:03Z"
+   }
+}
